@@ -1,4 +1,4 @@
-# Angular 2 Task Card Application
+# Angular 2 Task Card Application with Weather
 
 This application was built using Anuglar 2 and used its 2-way data binding to create task cards from users input.
 

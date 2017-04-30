@@ -1,0 +1,28 @@
+.container-fluid {
+    padding-top: 1.25rem;
+}
+.row {
+    margin-bottom: 2.25rem;
+}
+form {
+    text-align: center;
+}
+.btn {
+    background-color: #009688;
+    border-color: #009688;
+}
+.form-control {
+    border-color: #009688;
+}
+.form-control:hover {
+    border-color: #b88608;
+}
+.form-control:focus {
+    border-color: #ff0000;
+}
+i {
+    padding-right: .5rem;
+}
+h5 {
+    color: #aa3333;
+}

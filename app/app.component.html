@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form class="form-in-line" (ngSubmit)="addTask()" #taskForm="ngForm">
+                <div class="form-group">
+                    <label for="content-field" class="sr-only"></label>
+                    <input #contentField type="text" id="content-field" class="form-control" required placeholder="Please enter a task" [(ngModel)]="currentTask.content" name="content">
+                </div>
+                <button type="submit" class="btn btn-primary pull-right" [disabled]="taskForm.form.invalid"><i class="fa fa-tasks" aria-hidden="true"></i> Add task</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <weather-widget></weather-widget>
+        </div>
+        <div class="col-md-8">
+            <app-card *ngFor="let task of tasks" [task]="task" ></app-card>
+            <h5 *ngIf="tasks.length == 0" class="jumbotron text-lg-center">
+                <h3>You task list is empty feel free to add a new task</h3>
+            </h5>
+        </div>
+    </div>
+</div>

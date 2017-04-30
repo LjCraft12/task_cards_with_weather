@@ -1,0 +1,30 @@
+.card {
+    border-radius: 0;
+    cursor: pointer;
+}
+.card,
+.card-footer {
+    background-color: #ffffa5;
+    border: none;
+}
+.card.completed,
+.card.completed .card-footer {
+    color: #a9a9a9;
+}
+.card.completed i {
+    color: #7ff000;
+}
+.task, .task.completed i {
+    color: #000000
+}
+.card-footer {
+    text-align: right;
+}
+i {
+    color: #ff0000;
+    padding-right: .25em;
+}
+i.task {
+    color: #000000;
+    padding-bottom: .35rem;
+}

@@ -1,0 +1,12 @@
+<div class="col-sm-3">
+    <div class="card" (click)="statusToggle()" [class.completed]="task.completed">
+        <div class="card-block">
+            <i class="fa fa-thumb-tack task" aria-hidden="true"></i>
+            <p>{{ task.content }}</p>
+        </div>
+        <div class="card-footer">
+            <span *ngIf="!task.completed"><i class="fa fa-times-circle-o" aria-hidden="true"></i>Not Completed</span>
+            <span *ngIf="task.completed"><i class="fa fa-check-circle-o" aria-hidden="true"></i>Completed</span>
+        </div>
+    </div>
+</div>
